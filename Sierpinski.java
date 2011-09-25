@@ -36,18 +36,17 @@ public class Sierpinski extends Applet{
 		
 		
 		g.setColor(Color.GREEN);
-		int width = getWidth(); // Figured out another way to find the Width and Height of the Applet.
+		int width = getWidth(); 
 		int height = getHeight();
 		int pointsDraw;
         // Determine vertices of the triangle.
         int[][] points = new int[][] {
             {10, height - 10}, {width - 10, height - 10}, {width / 2, 10}};
 
-        // Now let us pick a vertex points[k] of the triangle, either
-        // points[0], points[1], or points[2].
+        
         int k = (int) (Math.random()*3);
        
-        // Next, compute the coordinates and draw a point at the midpoint
+        // Compute the coordinates and draw a point at the midpoint
         // between (x,y) and (points[k][0], points[k][1]).
        
         x = ((x + points[k][0]) / 2);
