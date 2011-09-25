@@ -6,7 +6,7 @@ public class Sierpinski extends Applet{
 	
 	 int x = 0;
 	 int y = 0;
-	 int delay = 0; // milliseconds
+	 int delay = 0; // milliseconds for delay...
 	
 	public void init() {
 		setBackground(Color.BLACK);
